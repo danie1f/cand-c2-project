@@ -1,0 +1,17 @@
+﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (Ohio),,Amazon EC2,0,927.123838,11125.49,USD,"Operating system (Linux), Storage amount (30 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month), Workload (Daily, (Workload days: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Baseline: 6, Peak: 12, Duration of peak: 8 Hr 30 Min)), Advance EC2 instance (m6i.xlarge), Pricing strategy (EC2 Instance Savings Plans 1 Year  None upfront), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)"
+My Estimate,US East (Ohio),,Amazon Virtual Private Cloud (VPC),0,250.02,3000.24,USD,Number of NAT Gateways (2)
+My Estimate,US East (Ohio),,Amazon CloudFront,0,1689.6,20275.2,USD,Data transfer out to internet (20 TB per month)
+My Estimate,US East (Ohio),,Application Load Balancer,0,721.06,8652.72,USD,Number of Application Load Balancers (4)
+My Estimate,US East (Ohio),,Amazon RDS for PostgreSQL,0,697.8,8373.6,USD,"Storage volume (General Purpose SSD (gp2)), Storage amount (1 TB per month), Nodes (1), Instance Type (db.r5.large), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (OnDemand), Additional backup storage (1 TB)"
+My Estimate,US East (Ohio),,S3 Standard,0,1177.6,14131.2,USD,S3 Standard storage (50 TB per month)
+My Estimate,US East (Ohio),,Data Transfer,0,0,0,USD,
+My Estimate,US East (Ohio),,Amazon Virtual Private Cloud (VPC),0,987.3,11847.6,USD,Number of NAT Gateways (2)
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
+,,,,,,,,
+"In this scenario, I have reduced the database configuration. The reason for this, is that there is a read replica which could take a load off from that main.",,,,,,,,
+With a  read replicate I should be able to reduce the resources used by the primary database.,,,,,,,,
